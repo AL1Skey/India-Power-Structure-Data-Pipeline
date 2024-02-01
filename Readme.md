@@ -1,6 +1,6 @@
 # India Power Structure Data Pipeline
 
-This project clean data with airflow and then save it in local
+This project are about Data Pipeline and clean data with airflow and then save it in local
 
 # Tools
 
