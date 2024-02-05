@@ -94,7 +94,7 @@ data_docs_sites:
       class_name: DefaultSiteIndexBuilder
 
 anonymous_usage_statistics:
-  data_context_id: 3b1ba025-c6ed-4fbf-aced-5ce961d60088
+  data_context_id: e1491ad5-19c0-4981-9022-54915c5d6f27
   enabled: true
 fluent_datasources:
   india-power-infrastructure-data:
