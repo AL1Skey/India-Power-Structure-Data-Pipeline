@@ -67,10 +67,10 @@ def preprocessing():
     df[['power_spec','power_needed','megawatt_capacity']] = df[['power_spec','power_needed','megawatt_capacity']].astype(int)
     df['kwh_needed'] = df['kwh_needed'].astype(float)
     df['year'] = df['year'].apply(lambda x: datetime.strptime(x.split('-')[0], "%Y"))
-    
+    df['year'] = pd.to_datetime(df['year'])
     
     # Save Cleaned Data
-    df.to_csv('/opt/airflow/dataset/clean.csv',index=False,sep=',')
+    df.to_csv('/opt/airflow/dataset/clean.csv',index=False,sep=',',date_format='%Y.%m.%d')
 
 def upload_to_elasticsearch():
     es = Elasticsearch("http://elasticsearch:9200")
